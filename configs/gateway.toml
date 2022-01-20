@@ -1,0 +1,34 @@
+[global]
+pprof = ":6076"
+
+# server
+version = "v1"
+region = "shenzhen"
+zone = "1"
+name = "gateway"
+nid = "shenzhen-gateway-1"
+nip = "127.0.0.1"
+port = "8080"
+
+secret = "348aef0470a3be44939b39ff92fbe417"
+
+# cert= "configs/cert.pem"
+# key= "configs/key.pem"
+[log]
+level = "info"
+# level = "debug"
+[redis]
+addrs = ["127.0.0.1:6379"]
+password = ""
+db = 0
+[etcd]
+addrs = "127.0.0.1:2379"
+# cert= "configs/cert.pem"
+# key= "configs/key.pem"
+[nats]
+url = "127.0.0.1:4222"
+natslog = "127.0.0.1:4222"
+
+[probe]
+host = "0.0.0.0"
+port = "80"

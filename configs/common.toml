@@ -1,0 +1,45 @@
+[global]
+pprof = ":6090"
+
+# server
+version = "v1"
+region = "shenzhen"
+zone = "1"
+name = "common"
+nid = "shenzhen-common-1"
+nip = "127.0.0.1"
+port = "8093"
+
+# cert= "configs/cert.pem"
+# key= "configs/key.pem"
+[log]
+level = "info"
+# level = "debug"
+[redis]
+addrs = [":6379"]
+password = ""
+db = 0
+
+[mysql]
+host = "127.0.0.1"
+port = "3306"
+username = "root"
+password = ""
+dbname = "dbname"
+
+
+[gcs]
+project_id = ""
+avatar_bucket = ""
+
+[etcd]
+addrs = "127.0.0.1:2379"
+# cert= "configs/cert.pem"
+# key= "configs/key.pem"
+[nats]
+url = "127.0.0.1:4222"
+natslog = "127.0.0.1:4222"
+
+[probe]
+host = "0.0.0.0"
+port = "80"
